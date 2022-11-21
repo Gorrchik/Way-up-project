@@ -1,0 +1,104 @@
+* {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+}
+
+.card-container {
+    margin-top: 2rem;
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card-container-bg {
+    background-color: red;    
+}
+
+.card {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    width: 15vw;
+    aspect-ratio: 5/7;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+    transform: translate(-50%);
+
+    left: 0;
+    top: 0;
+    rotate: 0deg;
+    transition: left 0.1s ease-in, rotate 0.2s ease-in-out;
+}
+
+.menu-card {
+    /* height: 7vw;
+    aspect-ratio: 5/7;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; */
+
+    border: solid 1px black;
+    background-color: white;
+    /* rotate: 90deg; */
+    /* transform: translate(50%, 50%); */
+}
+
+.card-container:hover > .menu-card{
+    /* background-color: red; */
+}
+
+.card-container > :nth-child(2){
+    rotate: 2deg;
+}
+
+.card-container > :nth-child(3){
+    rotate: 4deg;
+}
+
+.card-container > :nth-child(4){
+    rotate: 6deg;
+}
+
+.card-container > :nth-child(5){
+    rotate: 8deg;
+}
+
+.card-container:hover > :nth-child(2){
+    left: -40vw;
+    rotate: 0deg;
+}
+
+.card-container:hover > :nth-child(3){
+    left: -20vw;
+    rotate: 0deg;
+}
+
+.card-container:hover > :nth-child(4){
+    left: 20vw;
+    rotate: 0deg;
+}
+
+.card-container:hover > :nth-child(5){
+    left: 40vw;
+    rotate: 0deg;
+}
+
+.menu-card {
+    z-index: 1;
+}

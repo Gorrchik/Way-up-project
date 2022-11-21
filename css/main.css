@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FDFCEF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main Styles */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.37em;
+    margin: 0;
+}
+
+section {
+    padding-top: 120px;
+}
+
+h1 {
+    font-size: 50px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+} 
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+/* First Section */
+.logo {
+    margin: 60px auto 0 auto;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.hero-image {
+    width: 465px;
+}
+/* Main Text*/
+.hero-text {
+    width: 465px;
+}
+
+.intro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.36em;
+}
+.btn {
+    background: #FF6861;;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 70px;
+    font-weight: 700;
+    display: block;
+    width: 235px;
+    transition: all 0.5s ease;
+
+}
+.btn:hover {
+    background: #ff251a;
+}
+/* Second Section */
+.gameplay-container {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 720px;
+    margin: 0 auto;
+}
+.gameplay {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    transition: all 0.5s ease;
+}
+.gameplay-img {
+    width: 73px;
+    height: 73px;
+
+}
+.gameplay-title {
+    font-style: 30px;
+    margin-bottom: 11px;
+    transition: all 0.2s ease;
+}
+.gameplay-text {
+    transition: all 0.2s ease;
+}
+.gameplay:hover {
+    background: #f48d87;
+    color: #fff;
+    border-radius: 20px;
+}
+/* Third Section */
+.progress-wrapper {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 76px 168px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+}
+.hero-text h2 {
+    text-align: left;
+    margin-bottom: 0;
+}
+.progress-wrapper .hero-text {
+    width: 475px;
+}
+.progress-wrapper .intro {
+    margin: 24px 0;
+    width: 371px;
+}
+/* Footer */
+.footer {
+    padding: 120px 0;
+}
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+/* Large 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+/* Medium 768px - 991px */
+@media (max-width: 991px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 51px;
+    }
+    .hero-text {
+        width: 720px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .progress-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 101px 144px;
+    }
+    .hero-text h2 {
+        text-align: center;
+    }
+    .progress-wrapper .intro {
+        margin: 24px auto;
+        text-align: center;
+    }
+}
+/* Small 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .hero-text {
+        width: auto;
+    }
+    .gameplay-container {
+        width: auto;
+    }
+    .gameplay {
+        flex-direction: column;
+        text-align: center;
+    }
+    .progress-wrapper {
+        gap: 50px;
+    }
+
+}
+/* Extra small 0px (320px) - 575px */
+@media (max-width: 575px) {
+    section {
+        padding-top: 90px;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .footer {
+        padding: 90px 0;
+    }
+    .wrapper {
+        margin-top: 50px;
+    }
+    .hero-image {
+        width: 100%;
+        display: block;
+    }
+    .hero-text .intro {
+        width: 320px;
+    }
+    .gameplay-mechaniks .container {
+        padding: 0;
+    }
+    .mechanik-header {
+        width: 320px;
+        padding: 0;
+    }
+    .progress-wrapper {
+        padding: 70px 20px;
+    }
+    .progress-wrapper img {
+        width: 201px;
+    }
+    .progress-wrapper .hero-text {
+        width: 100%;
+    }
+    .progress-wrapper .intro {
+        width: auto;
+    }
+}
